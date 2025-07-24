@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Краски</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="full-width">
+      <header class="header">
+        <div class="header__mobile-controls">
+          <button class="header__menu-toggle" aria-label="Открыть меню">
+            <span class="header__menu-icon"></span>
+          </button>
+        </div>
+
+        <div class="header__logo">
+          <img src="./assets/logo.png" alt="Логотип" class="header__logo-img" />
+        </div>
+
+        <nav class="header__nav header__nav--desktop">
+          <a href="#" class="header__nav-item">ПРОДУКТЫ</a>
+          <a href="#" class="header__nav-item">ЦВЕТА</a>
+          <a href="#" class="header__nav-item">ВДОХНОВЕНИЕ</a>
+          <a href="#" class="header__nav-item">СОВЕТЫ</a>
+          <a href="#" class="header__nav-item">НАЙТИ МАГАЗИН</a>
+        </nav>
+
+        <div class="header__dropdown" id="mobileMenu">
+          <nav class="header__dropdown-nav">
+            <a href="#" class="header__dropdown-item">Продукты</a>
+            <a href="#" class="header__dropdown-item">Цвета</a>
+            <a href="#" class="header__dropdown-item">Вдохновение</a>
+            <a href="#" class="header__dropdown-item">Советы</a>
+            <a href="#" class="header__dropdown-item">Найти магазин</a>
+          </nav>
+        </div>
+
+        <div class="header__actions">
+          <div class="header__cta">
+            <span class="header__cta-number">+ 7 (495) 221-77-69</span>
+            <span class="header__cta-text">заказать звонок</span>
+          </div>
+
+          <div class="header__icons">
+            <button class="header__icon header__icon--search" aria-label="Поиск"></button>
+            <button class="header__icon header__icon--profile" aria-label="Профиль"></button>
+            <button class="header__icon header__icon--favorites" aria-label="Избранное"></button>
+            <button class="header__icon header__icon--cart" aria-label="Корзина">
+              <span class="header__cart-count" id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="slider-wrapper">
+        <nav class="breadcrumbs">
+        <a href="#" class="breadcrumbs__item">ГЛАВНАЯ</a>
+        <span class="breadcrumbs__separator">•</span>
+        <a href="#" class="breadcrumbs__item">ПРОДУКТЫ</a>
+        <span class="breadcrumbs__separator">•</span>
+        <span class="breadcrumbs__item breadcrumbs__item--current">КРАСКИ</span>
+      </nav>
+
+       <!-- Слайдер (только для десктопа) -->
+      <section class="slider swiper">
+
+  <div class="slider__container swiper-wrapper">  
+    <!-- Слайд 1 -->
+    <div class="slider__slide swiper-slide"> 
+      <img src="https://cdn0.divan.ru/img/v1/I4Z4gJadcpOt3f08-inacRPx3C3LB8QIno6VJFPgRto/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi93aWtpLWFydGljbGUvNDkwNTczNS5qcGc.jpg" alt="Комната с красной стеной" class="slider__image swiper-lazy" loading="lazy" />
+      <div class="slider__content">
+        <h2 class="slider__title">Краски</h2>
+        <p class="slider__subtitle">Яркие цвета для вашего интерьера</p>
+      </div>
+    </div>
+    <!-- Слайд 2 -->
+    <div class="slider__slide swiper-slide">
+      <img src="https://ldesign.studio/wp-content/uploads/2020/10/pokraska-v-interior2.jpg" alt="Комната с синей стеной" class="slider__image swiper-lazy" loading="lazy" />
+      <div class="slider__content">
+        <h2 class="slider__title">Новые оттенки</h2>
+        <p class="slider__subtitle">Откройте мир красок</p>
+      </div>
+    </div>
+    <!-- Слайд 3 -->
+    <div class="slider__slide swiper-slide">
+      <img src="https://cdn0.divan.ru/img/v1/Kntjptm4uU23UALHcdTYNOZ5CCa0wkHIxpPF4Epn2ow/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi93aWtpLWFydGljbGUvNTA5NTQ4NC5qcGc.jpg" alt="Комната с зеленой стеной" class="slider__image swiper-lazy" loading="lazy" />
+      <div class="slider__content">
+        <h2 class="slider__title">Эксклюзивные краски</h2>
+        <p class="slider__subtitle">Для профессионалов и любителей</p>
+      </div>
+    </div>
+    <!-- Слайд 4 -->
+    <div class="slider__slide swiper-slide">
+      <img src="https://salon.ru/storage/thumbs/gallery/407/406622/1359_1088_s264.jpg" alt="Комната с желтой стеной" class="slider__image swiper-lazy" loading="lazy" />
+      <div class="slider__content">
+        <h2 class="slider__title">Солнечные тона</h2>
+        <p class="slider__subtitle">Добавьте тепла в ваш дом</p>
+      </div>
+    </div>
+    <!-- Слайд 5 -->
+    <div class="slider__slide swiper-slide">
+      <img src="https://manders.ru/upload/iblock/074/074e8ae49f083dc3ef685d6ee2adada5.jpg" alt="Комната с серой стеной" class="slider__image swiper-lazy" loading="lazy" />
+      <div class="slider__content">
+        <h2 class="slider__title">Нейтральные оттенки</h2>
+        <p class="slider__subtitle">Идеально для современного стиля</p>
+      </div>
+    </div>
+    <!-- Слайд 6 -->
+    <div class="slider__slide swiper-slide">
+      <img src="https://cb4u.shop/images/articles/otdelka_i_mebel__kak-vybrat-cvet-sten-v-gostino.jpg" alt="Комната с фиолетовой стеной" class="slider__image swiper-lazy" loading="lazy" />
+      <div class="slider__content">
+        <h2 class="slider__title">Мистические цвета</h2>
+        <p class="slider__subtitle">Для творческих пространств</p>
+      </div>
+    </div>
+  </div>
+  <!-- Стрелки-->
+  <button class="slider__arrow slider__arrow--prev swiper-button-prev" aria-label="Предыдущий слайд"></button>
+  <button class="slider__arrow slider__arrow--next swiper-button-next" aria-label="Следующий слайд"></button>
+  <!-- Индикаторы-->
+  <div class="slider__indicators swiper-pagination"></div>  <!-- Swiper сам сгенерирует точки внутри -->
+    </section>
+      </div>
+      </div>
+
+      <main class="main">
+        <div class="main__layout">
+          <aside class="filters-sidebar">
+            <div class="filter-group">
+              <div class="filter-item">
+                  <label class="toggle-switch">
+                  <input type="checkbox" name="filter" value="new" />
+                  <span class="toggle-switch__slider"></span>
+                </label>
+                <span class="filter-item__label">НОВИНКИ</span>
+
+              </div>
+
+              <div class="filter-item">
+                <label class="toggle-switch">
+                  <input type="checkbox" name="filter" value="inStock" />
+                  <span class="toggle-switch__slider"></span>
+                </label>
+                <span class="filter-item__label">ЕСТЬ В НАЛИЧИИ</span>
+
+              </div>
+
+              <div class="filter-item">
+                <label class="toggle-switch">
+                  <input type="checkbox" name="filter" value="contract" />
+                  <span class="toggle-switch__slider"></span>
+                </label>
+              <span class="filter-item__label">КОНТРАКТНЫЕ</span>
+
+              </div>
+
+              <div class="filter-item">
+                <label class="toggle-switch">
+                  <input type="checkbox" name="filter" value="exclusive" />
+                  <span class="toggle-switch__slider"></span>
+                </label>
+                <span class="filter-item__label">ЭКСКЛЮЗИВНЫЕ</span>
+
+              </div>
+
+              <div class="filter-item">
+                <label class="toggle-switch">
+                  <input type="checkbox" name="filter" value="sale" />
+                  <span class="toggle-switch__slider"></span>
+                </label>
+                <span class="filter-item__label">РАСПРОДАЖА</span>
+
+              </div>
+            </div>
+          </aside>
+
+          <div class="main__content">
+            <div class="main__controls">
+              <button class="button button--filter">ФИЛЬТРЫ</button>
+              <div class="dropdown dropdown--sort">
+                <div class="dropdown__backdrop"></div>
+                <button class="dropdown__toggle" id="sortButton">
+                  СНАЧАЛА ДОРОГИЕ ↓
+                </button>
+                <div class="dropdown__content dropdown__content--sort" id="sortDropdown">
+                  <label class="dropdown__option">
+                    <span>Сначала дорогие</span>
+                  </label>
+                  <label class="dropdown__option">
+                    <span>Сначала недорогие</span>
+                  </label>
+                  <label class="dropdown__option">
+                    <span>Популярные</span>
+                  </label>
+                  <label class="dropdown__option">
+                    <span>Новые</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="products" id="productsList">
+              <!-- Продукты будут загружены через JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Modal (для мобильной версии) -->
+        <div class="filter-modal" id="filterModal">
+          <div class="filter-modal__backdrop"></div>
+          <div class="filter-modal__content">
+            <div class="filter-modal__handle"></div>
+            <div class="filter-modal__header">
+            </div>
+
+            <div class="filter-modal__body">
+              <div class="filter-group">
+                <div class="filter-item">
+                  <label class="toggle-switch">
+                    <input type="checkbox" name="filter" value="new" />
+                    <span class="toggle-switch__slider"></span>
+                  </label>
+                  <span class="filter-item__label">НОВИНКИ</span>
+                </div>
+
+                <div class="filter-item">
+                  <label class="toggle-switch">
+                    <input type="checkbox" name="filter" value="inStock" />
+                    <span class="toggle-switch__slider"></span>
+                  </label>
+                  <span class="filter-item__label">ЕСТЬ В НАЛИЧИИ</span>
+                </div>
+
+                <div class="filter-item">
+                  <label class="toggle-switch">
+                    <input type="checkbox" name="filter" value="contract" />
+                    <span class="toggle-switch__slider"></span>
+                  </label>
+                  <span class="filter-item__label">КОНТРАКТНЫЕ</span>
+                </div>
+
+                <div class="filter-item">
+                  <label class="toggle-switch">
+                    <input type="checkbox" name="filter" value="exclusive" />
+                    <span class="toggle-switch__slider"></span>
+                  </label>
+                  <span class="filter-item__label">ЭКСКЛЮЗИВНЫЕ</span>
+                </div>
+
+                <div class="filter-item">
+                  <label class="toggle-switch">
+                    <input type="checkbox" name="filter" value="sale" />
+                    <span class="toggle-switch__slider"></span>
+                  </label>
+                  <span class="filter-item__label">РАСПРОДАЖА</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-sidebar__backdrop"></div>
+      <div class="cart-sidebar__content">
+        <div class="cart-sidebar__header">
+          <h2 class="cart-sidebar__title">Корзина</h2>
+          <button class="cart-sidebar__close" aria-label="Закрыть корзину">
+            &times;
+          </button>
+        </div>
+        <div class="cart-sidebar__summary">
+          <span class="cart-sidebar__count" id="cartItemCount">0 товаров</span>
+          <button class="cart-sidebar__clear" id="clearCart">
+            Очистить список
+          </button>
+        </div>
+        <ul class="cart-sidebar__list" id="cartList"></ul>
+        <div class="cart-sidebar__footer">
+          <div class="cart-sidebar__total">
+            Итого: <span id="cartTotal">0 руб.</span>
+          </div>
+          <button class="cart-sidebar__checkout">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
